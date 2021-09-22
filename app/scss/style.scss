@@ -1,0 +1,82 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  border-bottom: solid 15px gray;
+}
+
+.menu {
+  display: flex;
+  &__contacts-list {
+    display: flex;
+  }
+  &__contacts-list-item {
+    padding-right: 40px;
+  }
+  &__contacts-list-link {
+    @extend %text-font;
+    color: $default;
+  }
+  &__contacts-img {
+    padding-right: 12px;
+  }
+//   &__social {
+//     position: absolute;
+//     right: 240px;
+//   }
+  &__social-list {
+    display: flex;
+  }
+  &__social-list-item {
+    padding-right: 30px;
+  }
+  &__social-list-link {
+    @extend %text-font;
+    color: $default;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  &__info {
+    display: flex;
+  }
+  &__info-link {
+    padding-right: 12px;
+  }
+  &__info-title {
+    @extend %title-font;
+    color: $default;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 19px;
+  }
+  &__list-items {
+    display: flex;
+  }
+  &__list-link {
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    padding-right: 32px;
+  }
+}
