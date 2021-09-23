@@ -33,8 +33,17 @@
     display: flex;
   }
 
-  &__top-cont {
+  &__top-tel{
     margin-right: 30px;
+    @extend %text-font;
+    color: $default;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+  }
+
+  &__top-adr {
+    margin-right: 245px;
     @extend %text-font;
     color: $default;
     font-size: 14px;
