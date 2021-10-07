@@ -108,6 +108,35 @@
 .main {
   background-color: #e5e5e5;
 
+  &__description {
+    padding-top: 120px;
+    padding-bottom: 64px;
+    text-align: center;
+  }
+
+  &__content-title {
+    @extend %title-font;
+    color: $default;
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    &:first-child{
+      margin-bottom: 34px;
+    }
+  }
+
+  &__content-text {
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    &:nth-child(2){
+      margin-bottom: 120px;
+    }
+  }
+
   &__items {
     display: flex;
     justify-content: space-around;
@@ -118,11 +147,10 @@
     width: 280px;
     align-items: center;
   }
-  &__list-items{
+  &__list-items {
     list-style: inside;
   }
-  &__img{
-    margin-left: auto;
-    margin-right: auto;
+  &__img {
+    text-align: center;
   }
 }
