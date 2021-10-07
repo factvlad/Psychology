@@ -184,10 +184,10 @@
     justify-content: space-between;
     text-align: center;
   }
-  &__numbers-list{
+  &__numbers-list {
     margin-right: 31px;
   }
-  &__numbers-title{
+  &__numbers-title {
     text-align: center;
     text-transform: uppercase;
     @extend %title-font;
@@ -196,11 +196,60 @@
     line-height: 57px;
     font-weight: 600;
   }
-  &__numbers-text{
+  &__numbers-text {
     @extend %text-font;
     color: $default;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+  }
+}
+.about {
+  background-color: #ecf6ff;
+  &__item {
+    display: flex;
+    // justify-content: space-between;
+    padding: 72px 0;
+  }
+  &__img {
+    margin-top: 117px;
+    margin-bottom: 103px;
+    border-radius: 16px;
+  }
+  &__content {
+    width: 510px;
+    margin-left: 190px;
+  }
+  &__content-title {
+    @extend %title-font;
+    color: $default;
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    margin-top: 72px;
+  }
+  &__content-text {
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 30px; 
+  }
+  &__content-text p {
+    margin-bottom: 8px;
+    &:nth-child(2) {
+      margin-bottom: 32px;
+    }
+  }
+  &__content-item {
+    list-style: inside;
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 12px;
   }
 }
