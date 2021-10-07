@@ -50,7 +50,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    width: 561px;
+    max-width: 561px;
     margin-bottom: 44px;
   }
   &__btn {
@@ -64,6 +64,9 @@
     line-height: 24px;
     font-weight: 400;
     margin-bottom: 56px;
+    &:hover {
+      background: #c2c2c2;
+    }
   }
   &__img {
     margin: 0 auto;
@@ -100,5 +103,25 @@
 
   &__img {
     margin-right: 12px;
+  }
+}
+.main {
+  background-color: #e5e5e5;
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__item {
+    min-height: 336px;
+    width: 280px;
+  }
+  &__list-items{
+    list-style: inside;
+  }
+  &__img{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
