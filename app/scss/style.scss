@@ -403,22 +403,22 @@
     text-transform: uppercase;
     text-align: center;
   }
-  // &__info {
-  //   display: flex;
-  //   flex-direction: row;
-  // }
+  &__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
   &__links {
     display: flex;
     flex-direction: column;
-    margin-left: 96px;
+    // margin-left: 96px;
   }
   &__sm {
     display: flex;
-    justify-content: center;
     padding-bottom: 47px;
   }
   &__sm-link {
-    margin-right: 84px;
+    margin-right: 1px;
     &:last-child {
       margin-right: 0;
     }
