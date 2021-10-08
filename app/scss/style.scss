@@ -284,9 +284,6 @@
   &__slider-info {
     max-width: 1030px;
     margin-left: 64px;
-    // background: red;
-    // border-radius: 50%;
-    // border: none;
   }
 
   &__slider-date {
@@ -322,5 +319,108 @@
     box-shadow: 6px 4px 20px rgba(34, 43, 128, 0.05);
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
+  }
+}
+
+.contact {
+  background-color: #ecf6ff;
+  padding-bottom: 94px;
+  &__items {
+    display: flex;
+  }
+
+  &__title {
+    @extend %title-font;
+    color: $default;
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 52px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 136px;
+    margin-top: 52px;
+  }
+
+  &__info-title {
+    @extend %title-font;
+    color: $default;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    padding-bottom: 14px;
+  }
+  &__info-text {
+    @extend %text-font;
+    color: $default;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+.footer {
+  background-color: #ecf6ff;
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 35px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 493px;
+      background-color: #101c5b;
+      right: 0;
+      height: 1.3px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 493px;
+      background-color: #101c5b;
+      left: 0;
+      height: 1.3px;
+    }
+  }
+  &__img {
+    margin-right: 12px;
+  }
+  &__title {
+    @extend %title-font;
+    color: $default;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  // &__info {
+  //   display: flex;
+  //   flex-direction: row;
+  // }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 96px;
+  }
+  &__sm {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 47px;
+  }
+  &__sm-link {
+    margin-right: 84px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
