@@ -377,7 +377,7 @@
     &::before {
       content: "";
       position: absolute;
-      width: 493px;
+      width: 34%;
       background-color: #101c5b;
       right: 0;
       height: 1.3px;
@@ -385,7 +385,7 @@
     &::after {
       content: "";
       position: absolute;
-      width: 493px;
+      width: 34%;
       background-color: #101c5b;
       left: 0;
       height: 1.3px;
@@ -408,17 +408,13 @@
     justify-content: center;
     flex-direction: row;
   }
-  &__links {
-    display: flex;
-    flex-direction: column;
-    // margin-left: 96px;
-  }
+
   &__sm {
     display: flex;
     padding-bottom: 47px;
   }
   &__sm-link {
-    margin-right: 1px;
+    margin-right: 84px;
     &:last-child {
       margin-right: 0;
     }
