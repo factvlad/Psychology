@@ -1,15 +1,15 @@
 @media (min-width: 2500px) {
   .header {
     &__inner {
-      min-height: 65vh;
+      min-height: 60vh;
     }
   }
 }
 
-@media (min-width:1980px) {
+@media (max-width:1980px) {
   .header {
     &__inner {
-      min-height: 75vh;
+      min-height: 70vh;
     }
   }
 }
