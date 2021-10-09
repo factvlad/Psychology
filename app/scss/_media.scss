@@ -1,7 +1,7 @@
-@media (max-width: 1900px) {
+@media (max-width: 2500px) {
   .header {
-    &__img {
-      display: none;
+    &__inner {
+      min-height: 65vh;
     }
   }
 }
