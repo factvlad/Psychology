@@ -2,7 +2,7 @@
   font-family: "Mulish", sans-serif;
 }
 
-.header__top-tel, .header__top-adr, .header__top-link, .menu__link {
+.header__top-cont, .header__top-link, .menu__link {
   font-family: "Poppins", sans-serif;
 }
 
@@ -145,16 +145,8 @@ body {
   display: flex;
 }
 
-.header__top-tel {
+.header__top-cont {
   margin-right: 30px;
-  color: #101c5b;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 500;
-}
-
-.header__top-adr {
-  margin-right: 245px;
   color: #101c5b;
   font-size: 14px;
   line-height: 17px;
