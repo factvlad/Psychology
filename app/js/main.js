@@ -23,4 +23,10 @@ $(function () {
      * 1000 скорость перехода в миллисекундах
      */
   });
+
+
 });
+
+// function showBtn() {
+//  document.querySelector(".yButton").style.display = "block";
+// }
