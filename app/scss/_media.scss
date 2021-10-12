@@ -14,12 +14,66 @@
 //   }
 // }
 
-@media (max-width: 1466px) {
-  // .header {
-  //   &__inner {
-  //     min-height: 100vh;
-  //   }
-  // }
+@media (max-width: 1215px) {
+  .menu {
+    &__img,
+    &__title {
+      position: relative;
+      z-index: 20;
+    }
+    &__btn {
+      display: block;
+      span {
+        display: block;
+        height: 2px;
+        background-color: $default;
+        position: relative;
+        &::before,
+        &::after {
+          content: "";
+          width: 40px;
+          height: 2px;
+          background-color: $default;
+          position: absolute;
+          left: 0;
+        }
+        &::before {
+          top: 10px;
+        }
+        &::after {
+          top: -10px;
+        }
+      }
+    }
+    &__list {
+      transform: translateY(-150%);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #fbf8f4;
+      padding-top: 90px;
+      width: 100%;
+      text-align: center;
+
+      &.active {
+        transform: translateY(0);
+        transition: all 0.5s;
+      }
+    }
+    &__link {
+      @extend %text-font;
+      color: $default;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      display: block;
+    }
+    &__list-item {
+      padding: 15px 0;
+    }
+  }
 }
 
 @media (max-width: 1200px) {

@@ -437,6 +437,18 @@
     font-weight: 400;
   }
 }
+.menu__btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  display: block;
+  width: 40px;
+  z-index: 20;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  right: 10%;
+}
 
 .yButton {
   display: none;

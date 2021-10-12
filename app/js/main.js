@@ -1,4 +1,8 @@
 $(function () {
+  $(".menu__btn").on("click", function () {
+    $(".menu__list").toggleClass("active");
+  });
+
   $(".comment__slider").slick({
     dots: true,
     arrows: false,
@@ -23,8 +27,6 @@ $(function () {
      * 1000 скорость перехода в миллисекундах
      */
   });
-
-
 });
 
 // function showBtn() {
