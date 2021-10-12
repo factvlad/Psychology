@@ -441,13 +441,13 @@
   display: none;
   background-color: transparent;
   border: none;
-  display: block;
+  // display: block;
   width: 40px;
   z-index: 20;
   cursor: pointer;
   padding: 0;
   position: absolute;
-  right: 10%;
+  right: 20px;
 }
 
 .yButton {
