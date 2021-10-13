@@ -15,10 +15,10 @@
     flex-direction: column;
     min-height: 100vh;
   }
-&__top-name{
-  display: flex;
-  align-items: center;
-}
+  &__top-name {
+    display: flex;
+    align-items: center;
+  }
   &__top {
     display: flex;
     align-items: center;
@@ -145,7 +145,7 @@
     flex-wrap: wrap;
   }
   &__item {
-    width: 280px;
+    width: 255px;
     &:hover {
       background-color: #fffcf8;
     }
@@ -184,11 +184,14 @@
     padding-top: 80px;
     padding-bottom: 120px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
   }
   &__numbers-list {
-    margin-right: 31px;
+    margin-right: 35px;
+    &:nth-child(3) {
+      margin-right: 0;
+    }
   }
   &__numbers-title {
     text-align: center;
@@ -209,6 +212,9 @@
 }
 .about {
   background-color: #ecf6ff;
+  &__inner {
+    padding-top: 50px;
+  }
   &__item {
     display: flex;
     padding-bottom: 16px;
@@ -220,7 +226,7 @@
   }
   &__content {
     width: 510px;
-    margin-left: 190px;
+    margin-left: 160px;
   }
   &__content-title {
     @extend %title-font;
@@ -229,7 +235,6 @@
     line-height: 57px;
     font-weight: 600;
     margin-bottom: 32px;
-    margin-top: 72px;
   }
   &__content-text {
     @extend %text-font;
@@ -257,6 +262,7 @@
 }
 
 .comment {
+  min-height: 100vh;
   padding-bottom: 35px;
   &__slider-item {
     display: flex !important;
@@ -421,11 +427,13 @@
     flex-direction: column;
     order: 2;
     margin-left: auto;
+    text-align: center;
   }
   &__items {
     display: flex;
     flex-direction: column;
     margin-right: auto;
+    text-align: center;
   }
 
   &__item {
@@ -438,6 +446,10 @@
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
+  }
+  &__top-name {
+    display: flex;
+    align-items: center;
   }
 }
 .menu__btn {
