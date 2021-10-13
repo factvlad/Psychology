@@ -11,24 +11,30 @@ $(function () {
   });
 
   $('a[href^="#"]').on("click", function (event) {
-    // отменяем стандартное действие
     event.preventDefault();
 
     var sc = $(this).attr("href"),
       dn = $(sc).offset().top;
-    /*
-     * sc - в переменную заносим информацию о том, к какому блоку надо перейти
-     * dn - определяем положение блока на странице
-     */
-
     $("html, body").animate({ scrollTop: dn }, 1000);
+  });
 
-    /*
-     * 1000 скорость перехода в миллисекундах
-     */
+  $(document).ready(function () {
+    var button = $("#button-up");
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        button.fadeIn();
+      } else {
+        button.fadeOut();
+      }
+    });
+    button.on("click", function () {
+      $("body, html").animate(
+        {
+          scrollTop: 0,
+        },
+        800
+      );
+      return false;
+    });
   });
 });
-
-// function showBtn() {
-//  document.querySelector(".yButton").style.display = "block";
-// }
