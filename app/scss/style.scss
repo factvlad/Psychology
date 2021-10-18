@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     padding: 30px 0 30px;
-    margin-bottom: 50px;
+    margin-bottom: 145px;
   }
 
   &__title {
@@ -34,7 +34,7 @@
     font-weight: 900;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    margin-bottom: 24px;
+    margin-bottom: 1px;
   }
 
   &__subtitle {
@@ -181,7 +181,7 @@
 }
 .content {
   &__numbers {
-    padding-top: 80px;
+    padding-top: 165px;
     padding-bottom: 120px;
     display: flex;
     justify-content: center;
@@ -220,7 +220,7 @@
     padding-bottom: 16px;
   }
   &__img {
-    margin-top: 117px;
+    // margin-top: 117px;
     margin-bottom: 103px;
     border-radius: 16px;
   }
