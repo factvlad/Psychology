@@ -307,6 +307,10 @@
 }
 
 @media (max-width: 380px) {
+  #button-up {
+    display: none !important;
+  }
+
   .header {
     &__top {
       justify-content: start;
@@ -352,6 +356,7 @@
   .footer {
     &__items-right {
       justify-content: center;
+      text-align: inherit;
     }
     &__items {
       justify-content: center;
@@ -365,11 +370,14 @@
     }
     &__top {
       &::before {
-        width: 4%;
+        width: 0%;
       }
       &::after {
-        width: 4%;
+        width: 0%;
       }
+    }
+    &__creater {
+      font-size: 11px;
     }
   }
 }
